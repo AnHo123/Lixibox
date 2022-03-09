@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=s, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.6.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="./assets/styles/base.css">
+    <link rel="stylesheet" href="./assets/styles/index.css">
+    <link rel="stylesheet" href="./assets/styles/detail.css">
+    <link rel="stylesheet" href="./assets/styles/cart.css">
+    <title>Cart - Lixibox Shop</title>
+    <link rel="shortcut icon" href="./assets/img/fav.ico">
+</head>
+<body>
+    <div class="header-cart">
+        <div class="container">
+            <nav class="navbar-primary navbar align-items-center">
+                <a class="navbar-brand d-none d-sm-block" href="index.html">
+                    <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="width: 50px; "><path d="M50,0 C22.3755047,0 0,22.3755047 0,50 C0,77.6244953 22.3755047,100 50,100 C77.6244953,100 100,77.6244953 100,50 C100,22.3755047 77.6244953,0 50,0 Z M50,95.8277254 C24.6971736,95.8277254 4.17227456,75.3028264 4.17227456,50 C4.17227456,24.6971736 24.6971736,4.17227456 50,4.17227456 C75.3028264,4.17227456 95.8277254,24.6971736 95.8277254,50 C95.8277254,75.3028264 75.3364738,95.8277254 50,95.8277254 Z" id="Shape"></path><path d="M49.445158,56.7282691 L46.5065502,59.7038419 L37.1564346,69.1715735 L37.1564346,69.1715735 C35.2864115,71.0651198 34.1176471,73.668746 34.1176471,76.5766921 C34.1176471,77.083892 34.1510403,77.5910919 34.2178269,78.0644785 C34.8189057,82.4263977 38.0580529,85.9091704 42.2656049,86.8221302 C42.399178,86.8559436 42.5327511,86.8897569 42.6663242,86.8897569 C43.2340098,86.9911969 43.8350886,87.0588235 44.4361675,87.0588235 C46.2394041,87.0588235 47.9424608,86.5854369 49.4117647,85.7739171 C50.8810686,86.5854369 52.5841254,87.0588235 54.3873619,87.0588235 C54.9884408,87.0588235 55.5895197,86.9911969 56.1572052,86.8897569 C56.2907783,86.8559436 56.4243514,86.8221302 56.5579245,86.8221302 C60.7320832,85.9091704 64.0046237,82.4263977 64.6057025,78.0644785 C64.6724891,77.5910919 64.7058824,77.083892 64.7058824,76.5766921 C64.7058824,73.668746 63.5371179,71.0313065 61.6337015,69.1377602 L61.6337015,69.1377602 L55.2221937,62.6456014 L55.2221937,62.6456014 L52.2835859,65.6211741 L52.8846648,66.229814 L58.6950938,72.1133329 C58.6950938,72.1133329 58.728487,72.1471463 58.728487,72.1471463 C59.8304649,73.2967994 60.5317236,74.8522124 60.5317236,76.5766921 C60.5317236,80.0256515 57.7600822,82.865971 54.3205754,82.865971 C53.7862831,82.865971 53.285384,82.7983443 52.784485,82.663091 C51.3819676,82.2911444 50.1798099,81.4458112 49.3449782,80.3299714 C48.5101464,81.4796246 47.3079887,82.2911444 45.9054714,82.663091 C45.4045723,82.7983443 44.9036733,82.865971 44.3693809,82.865971 C40.9632674,82.865971 38.1582327,80.0594648 38.1582327,76.5766921 C38.1582327,74.8522124 38.8594914,73.2629861 39.9614693,72.1471463 C39.9614693,72.1471463 39.9614693,72.1471463 39.9614693,72.1471463 L45.8052915,66.229814 L49.3115849,62.6794147 L49.3115849,62.6794147 L52.2501927,59.7038419 L52.2501927,59.7038419 L56.0236322,55.8829359 L53.1184177,52.9411765 L49.445158,56.7282691 Z" id="Path"></path><path d="M56.7282691,50.554842 L59.7038419,53.4934498 L69.1715735,62.8435654 L69.1715735,62.8435654 C71.0651198,64.7135885 73.668746,65.8823529 76.5766921,65.8823529 C77.083892,65.8823529 77.5910919,65.8489597 78.0644785,65.7821731 C82.4263977,65.1810943 85.9091704,61.9419471 86.8221302,57.7343951 C86.8559436,57.600822 86.8897569,57.4672489 86.8897569,57.3336758 C86.9911969,56.7659902 87.0588235,56.1649114 87.0588235,55.5638325 C87.0588235,53.7605959 86.5854369,52.0575392 85.7739171,50.5882353 C86.5854369,49.1189314 87.0588235,47.4158746 87.0588235,45.6126381 C87.0588235,45.0115592 86.9911969,44.4104803 86.8897569,43.8427948 C86.8559436,43.7092217 86.8221302,43.5756486 86.8221302,43.4420755 C85.9091704,39.2679168 82.4263977,35.9953763 78.0644785,35.3942975 C77.5910919,35.3275109 77.083892,35.2941176 76.5766921,35.2941176 C73.668746,35.2941176 71.0313065,36.4628821 69.1377602,38.3662985 L69.1377602,38.3662985 L62.6456014,44.7778063 L62.6456014,44.7778063 L65.6211741,47.7164141 L66.229814,47.1153352 L72.1133329,41.3049062 C72.1133329,41.3049062 72.1471463,41.271513 72.1471463,41.271513 C73.2967994,40.1695351 74.8522124,39.4682764 76.5766921,39.4682764 C80.0256515,39.4682764 82.865971,42.2399178 82.865971,45.6794246 C82.865971,46.2137169 82.7983443,46.714616 82.663091,47.215515 C82.2911444,48.6180324 81.4458112,49.8201901 80.3299714,50.6550218 C81.4796246,51.4898536 82.2911444,52.6920113 82.663091,54.0945286 C82.7983443,54.5954277 82.865971,55.0963267 82.865971,55.6306191 C82.865971,59.0367326 80.0594648,61.8417673 76.5766921,61.8417673 C74.8522124,61.8417673 73.2629861,61.1405086 72.1471463,60.0385307 C72.1471463,60.0385307 72.1471463,60.0385307 72.1471463,60.0385307 L66.229814,54.1947085 L62.6794147,50.6884151 L62.6794147,50.6884151 L59.7038419,47.7498073 L59.7038419,47.7498073 L55.8829359,43.9763678 L52.9411765,46.8815823 L56.7282691,50.554842 Z" id="Path"></path><path d="M43.2717309,50.6216286 L40.2961581,47.6830208 L30.8284265,38.3329052 L30.8284265,38.3329052 C28.9348802,36.4628821 26.331254,35.2941176 23.4233079,35.2941176 C22.916108,35.2941176 22.4089081,35.3275109 21.9355215,35.3942975 C17.5736023,35.9953763 14.0908296,39.2345235 13.1778698,43.4420755 C13.1440564,43.5756486 13.1102431,43.7092217 13.1102431,43.8427948 C13.0088031,44.4104803 12.9411765,45.0115592 12.9411765,45.6126381 C12.9411765,47.4158746 13.4145631,49.1189314 14.2260829,50.5882353 C13.4145631,52.0575392 12.9411765,53.7605959 12.9411765,55.5638325 C12.9411765,56.1649114 13.0088031,56.7659902 13.1102431,57.3336758 C13.1440564,57.4672489 13.1778698,57.600822 13.1778698,57.7343951 C14.0908296,61.9085538 17.5736023,65.1810943 21.9355215,65.7821731 C22.4089081,65.8489597 22.916108,65.8823529 23.4233079,65.8823529 C26.331254,65.8823529 28.9686935,64.7135885 30.8622398,62.8101721 L30.8622398,62.8101721 L37.3543986,56.3986643 L37.3543986,56.3986643 L34.3788259,53.4600565 L33.770186,54.0611354 L27.8866671,59.8715643 C27.8866671,59.8715643 27.8528537,59.9049576 27.8528537,59.9049576 C26.7032006,61.0069355 25.1477876,61.7081942 23.4233079,61.7081942 C19.9743485,61.7081942 17.134029,58.9365528 17.134029,55.497046 C17.134029,54.9627537 17.2016557,54.4618546 17.336909,53.9609556 C17.7088556,52.5584382 18.5541888,51.3562805 19.6700286,50.5214488 C18.5203754,49.686617 17.7088556,48.4844593 17.336909,47.0819419 C17.2016557,46.5810429 17.134029,46.0801438 17.134029,45.5458515 C17.134029,42.139738 19.9405352,39.3347033 23.4233079,39.3347033 C25.1477876,39.3347033 26.7370139,40.035962 27.8528537,41.1379399 C27.8528537,41.1379399 27.8528537,41.1379399 27.8528537,41.1379399 L33.770186,46.9817621 L37.3205853,50.4880555 L37.3205853,50.4880555 L40.2961581,53.4266632 L40.2961581,53.4266632 L44.1170641,57.2001027 L47.0588235,54.2948883 L43.2717309,50.6216286 Z" id="Path"></path><path d="M49.3783714,43.2717309 L52.3169792,40.2961581 L61.6670948,30.8284265 L61.6670948,30.8284265 C63.5371179,28.9348802 64.7058824,26.331254 64.7058824,23.4233079 C64.7058824,22.916108 64.6724891,22.4089081 64.6057025,21.9355215 C64.0046237,17.5736023 60.7654765,14.0908296 56.5579245,13.1778698 C56.4243514,13.1440564 56.2907783,13.1102431 56.1572052,13.1102431 C55.5895197,13.0088031 54.9884408,12.9411765 54.3873619,12.9411765 C52.5841254,12.9411765 50.8810686,13.4145631 49.4117647,14.2260829 C47.9424608,13.4145631 46.2394041,12.9411765 44.4361675,12.9411765 C43.8350886,12.9411765 43.2340098,13.0088031 42.6663242,13.1102431 C42.5327511,13.1440564 42.399178,13.1778698 42.2656049,13.1778698 C38.0914462,14.0908296 34.8189057,17.5736023 34.2178269,21.9355215 C34.1510403,22.4089081 34.1176471,22.916108 34.1176471,23.4233079 C34.1176471,26.331254 35.2864115,28.9686935 37.1898279,30.8622398 L37.1898279,30.8622398 L43.6013357,37.3543986 L43.6013357,37.3543986 L46.5399435,34.3788259 L45.9388646,33.770186 L40.1284357,27.8866671 C40.1284357,27.8866671 40.0950424,27.8528537 40.0950424,27.8528537 C38.9930645,26.7032006 38.2918058,25.1477876 38.2918058,23.4233079 C38.2918058,19.9743485 41.0634472,17.134029 44.502954,17.134029 C45.0372463,17.134029 45.5381454,17.2016557 46.0390444,17.336909 C47.4415618,17.7088556 48.6437195,18.5541888 49.4785512,19.6700286 C50.313383,18.5203754 51.5155407,17.7088556 52.9180581,17.336909 C53.4189571,17.2016557 53.9198562,17.134029 54.4541485,17.134029 C57.860262,17.134029 60.6652967,19.9405352 60.6652967,23.4233079 C60.6652967,25.1477876 59.964038,26.7370139 58.8620601,27.8528537 C58.8620601,27.8528537 58.8620601,27.8528537 58.8620601,27.8528537 L53.0182379,33.770186 L49.5119445,37.3205853 L49.5119445,37.3205853 L46.5733368,40.2961581 L46.5733368,40.2961581 L42.7998973,44.1170641 L45.7051117,47.0588235 L49.3783714,43.2717309 Z" id="Path"></path></svg>
+                    <svg viewBox="0 0 462 63" data-radium="true" style="width: 140px; height: 20px;">
+                        <g fill="#000204" fill-rule="nonzero" data-radium="true">
+                            <path d="M87.18,1.91 L87.18,61.15 L79.09,61.15 L79.09,10.15 C79.09,6.68 76.9,3.68 71.88,2.31 L71.88,1.9 L87.18,1.91 Z"></path>
+                            <path d="M173.61,60.74 L173.61,61.15 L164.79,61.15 C161.173452,61.1081105 157.808584,59.291082 155.79,56.29 L142.36,35.66 L122.36,61.15 L117.75,61.15 L140.25,32.42 L123.33,6.6 C122.703528,5.65784732 121.910569,4.8377778 120.99,4.18 C120.013371,3.47266848 118.915161,2.95067988 117.75,2.64 L116.29,2.32 L116.29,1.90993035 L125.11,1.91 C128.720827,1.89704795 132.09879,3.69112183 134.11,6.69 L146.11,25.05 L164.24,1.91 L168.85,1.91 L148.2,28.32 L166.48,56.32 C167.119891,57.3060734 167.945163,58.1585154 168.91,58.83 C169.909048,59.5491342 171.035723,60.0717486 172.23,60.37 L173.61,60.74 Z"></path>
+                            <path d="M46,61.15 L43.94,57.5 L16.05,57.5 L16.05,1.91 L0.83,1.91 L0.83,2.32 C5.77,3.69 7.96,6.69 7.96,10.16 L7.96,61.16 L46,61.15 Z"></path>
+                            <path d="M213.18,1.91 L213.18,61.15 L205.09,61.15 L205.09,10.15 C205.09,6.68 202.9,3.68 197.89,2.31 L197.89,1.9 L213.18,1.91 Z"></path>
+                            <path d="M294.1,45.77 C294.1,49.09 291.68,61.15 271.2,61.15 L249.52,61.15 L249.52,10.25 C249.50416,6.14950428 246.390487,2.72489638 242.31,2.32 L242.31,1.91 L271.2,1.91 C289.33,1.67 291.51,14.78 291.51,17.37 C291.51,25.54 286.09,29.26 281.24,30.96 C287.06,32.32 294.1,35.98 294.1,45.77 Z M258.42,29.18 L271.61,29.18 C274.603203,29.1702515 277.466083,27.9542274 279.551328,25.8068768 C281.636573,23.6595262 282.768076,20.7622007 282.69,17.77 C282.69,9.44 277.27,4.77 269.91,4.77 L258.42,4.77 L258.42,29.18 Z M284.31,45.37 C284.31,33.15 271.45,32.01 269.02,32.01 L258.42,32.01 L258.42,58.01 L271.2,58.01 C271.2,58.01 284.31,57.67 284.31,45.37 Z"></path>
+                            <path d="M382,31.37 C382,52.81 369.21,62.2 353.43,62.2 C337.65,62.2 324.87,52.81 324.87,31.37 C324.87,10.65 337.65,0.62 353.43,0.62 C369.21,0.62 382,10.49 382,31.37 Z M372.29,31.37 C372.29,12.37 363.87,3.29 353.43,3.29 C342.99,3.29 334.58,12.51 334.58,31.37 C334.58,50.95 343.07,59.45 353.43,59.45 C363.79,59.45 372.28,50.95 372.28,31.37 L372.29,31.37 Z"></path>
+                            <path d="M461.94,60.74 L461.94,61.15 L453.12,61.15 C449.500767,61.118512 446.13136,59.2990322 444.12,56.29 L430.7,35.66 L410.7,61.15 L406.1,61.15 L428.6,32.42 L411.69,6.6 C411.057133,5.65974152 410.261283,4.84018478 409.34,4.18 C408.364427,3.47088969 407.265874,2.94873795 406.1,2.64 L404.65,2.32 L404.65,1.90986061 L413.47,1.91 C417.08216,1.89164564 420.462519,3.68699216 422.47,6.69 L434.47,25.05 L452.59,1.91 L457.21,1.91 L436.53,28.32 L454.82,56.32 C455.459891,57.3060734 456.285163,58.1585154 457.25,58.83 C458.245423,59.5490486 459.368814,60.0717138 460.56,60.37 L461.94,60.74 Z"></path>
+                        </g>
+                    </svg>
+                </a>
+                <!-- navbar -->
+                <div class="d-block d-sm-none">
+                    <a href="index.html"><i class="bi bi-chevron-left pe-2"></i>Giỏ hàng</a>
+                </div>
+                <div class="d-flex align-items-center">
+                    <div class="d-flex align-items-center">
+                        <i class="bi bi-basket3 bg-dark text-white p-1 px-2 fs-6 me-1 rounded-pill"></i>
+                        <span class="fw-500 d-none d-lg-block">1. GIỎ HÀNG</span>
+                    </div>
+                    <i class="bi bi-dash-lg px-3 text-secondary"></i>
+                    <div class="d-flex align-items-center text-secondary">
+                        <i class="bi bi-wallet2 bg-secondary text-white p-1 px-2 fs-6 me-1 rounded-pill"></i>
+                        <span class="fw-500 d-none d-lg-block">2. THANH TOÁN</span>
+                    </div>
+                    <i class="bi bi-dash-lg px-3 text-secondary"></i>
+                    <div class="d-flex align-items-center text-secondary">
+                        <i class="bi bi-check-lg bg-secondary text-white p-1 px-2 fs-6 me-1 rounded-pill"></i>
+                        <span class="fw-500 d-none d-lg-block">3. HOÀN TẤT</span>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <!-- cart -->
+    <div class="body-cart pb-4">
+        <div class="container">
+            <span class="fs-3 py-4 d-block d-none d-sm-block">Giỏ Hàng Của Bạn <span class="fs-6 text-secondary">(3 sản phẩm)</span></span>
+            <div class="row">
+                <div class="col-lg-8">
+                    <!-- caution moblie -->
+                    <div class="my-2 bg-white card-item-wrap d-block d-sm-none">
+                        <span class="d-block fs-7 py-2 px-3 cart-caution">Thông báo: Lixibox đã bắt đầu xử lý lại đơn hàng và bàn giao đến đơn vị vận chuyển. Tuy nhiên, trong thời gian giãn cách xã hội, đơn hàng của quý khách sẽ giao chậm trễ hơn bình thường, một số khu vực phong toả có thể tạm ngưng đến khi có thông tin mới nhất. Lixibox rất mong quý khách thông cảm.</span>
+                   </div>
+                    <!-- cart list -->
+                    <div class="cart-item-wrap bg-white">
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item cursor-pointer">
+                                <a href="product-detail.html" class="row w-100 align-items-center">
+                                    <!-- img -->
+                                    <div class="col-md-2 col-4">
+                                        <img src="./assets/img/product/mayruamat.png" style="width:100%;" alt="">
+                                    </div>
+                                    <!-- product info -->
+                                    <div class="col-md-8 col-7">
+                                        <span class="card-text-wrap cart-item-name">[Nhập HSGIFT - FREE Quà 240K] Máy Rửa Mặt Dành Cho Da Nhạy Cảm Halio Sensitive Facial Cleansing & Massaging Device Purple Rain</span>
+                                        <div class="d-block">
+                                            <span class="fs-6">709.000 ₫</span>
+                                            <span class="fs-7 text-secondary text-decoration-line-through">900.000 ₫</span>
+                                        </div>
+                                        <div class="d-flex align-items-center pt-2">
+                                            <i class="bi bi-dash fs-4 text-secondary icon-quality"></i>
+                                            <span class="px-2">1</span>
+                                            <i class="bi bi-plus fs-4 text-secondary icon-quality"></i>
+                                        </div>
+                                    </div>
+                                    <!-- button delete -->
+                                    <div class="col-md-2 text-center d-lg-block d-none">
+                                        <button type="button" class="btn btn-light text-secondary"><i class="bi bi-trash pe-2"></i>Xóa</button>
+                                    </div>
+                                    <div class="col-1 col-md-2 text-center text-secondary d-block d-lg-none">
+                                        <i class="bi bi-x-lg"></i>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="list-group-item cursor-pointer">
+                                <a href="product-detail.html" class="row w-100 align-items-center">
+                                    <!-- img -->
+                                    <div class="col-md-2 col-4">
+                                        <img src="./assets/img/product/mayruamat.png" style="width:100%;" alt="">
+                                    </div>
+                                    <!-- product info -->
+                                    <div class="col-md-8 col-7">
+                                        <span class="card-text-wrap cart-item-name">[Nhập HSGIFT - FREE Quà 240K] Máy Rửa Mặt Dành Cho Da Nhạy Cảm Halio Sensitive Facial Cleansing & Massaging Device Purple Rain</span>
+                                        <div class="d-block">
+                                            <span class="fs-6">709.000 ₫</span>
+                                            <span class="fs-7 text-secondary text-decoration-line-through">900.000 ₫</span>
+                                        </div>
+                                        <div class="d-flex align-items-center pt-2">
+                                            <i class="bi bi-dash fs-4 text-secondary icon-quality"></i>
+                                            <span class="px-2">1</span>
+                                            <i class="bi bi-plus fs-4 text-secondary icon-quality"></i>
+                                        </div>
+                                    </div>
+                                    <!-- button delete -->
+                                    <div class="col-md-2 text-center d-lg-block d-none">
+                                        <button type="button" class="btn btn-light text-secondary"><i class="bi bi-trash pe-2"></i>Xóa</button>
+                                    </div>
+                                    <div class="col-1 col-md-2 text-center text-secondary d-block d-lg-none">
+                                        <i class="bi bi-x-lg"></i>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="list-group-item cursor-pointer">
+                                <a href="product-detail.html" class="row w-100 align-items-center">
+                                    <!-- img -->
+                                    <div class="col-md-2 col-4">
+                                        <img src="./assets/img/product/mayruamat.png" style="width:100%;" alt="">
+                                    </div>
+                                    <!-- product info -->
+                                    <div class="col-md-8 col-7">
+                                        <span class="card-text-wrap cart-item-name">[Nhập HSGIFT - FREE Quà 240K] Máy Rửa Mặt Dành Cho Da Nhạy Cảm Halio Sensitive Facial Cleansing & Massaging Device Purple Rain</span>
+                                        <div class="d-block">
+                                            <span class="fs-6">709.000 ₫</span>
+                                            <span class="fs-7 text-secondary text-decoration-line-through">900.000 ₫</span>
+                                        </div>
+                                        <div class="d-flex align-items-center pt-2">
+                                            <i class="bi bi-dash fs-4 text-secondary icon-quality"></i>
+                                            <span class="px-2">1</span>
+                                            <i class="bi bi-plus fs-4 text-secondary icon-quality"></i>
+                                        </div>
+                                    </div>
+                                    <!-- button delete -->
+                                    <div class="col-md-2 text-center d-lg-block d-none">
+                                        <button type="button" class="btn btn-light text-secondary"><i class="bi bi-trash pe-2"></i>Xóa</button>
+                                    </div>
+                                    <div class="col-1 col-md-2 text-center text-secondary d-block d-lg-none">
+                                        <i class="bi bi-x-lg"></i>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- promo code mobile-->
+                    <div class="bg-white mt-3 py-2 px-3 cart-item-wrap d-block d-sm-none">
+                        <label for="inputState" class="form-label fs-6 fw-500"><i class="bi bi-tag pe-2"></i>Mã giảm giá</label>
+                        <select id="inputState" class="form-select fs-7 cursor-pointer">
+                          <option selected>Mã giảm giá</option>
+                          <option>...</option>
+                        </select>
+                        <div class="promo-code d-flex justify-content-between align-items-center position-relative my-3">
+                            <span class="d-block fw-500 fs-7 py-4 px-3 text-primary">APPLXB</span>
+                            <span class="d-block fs-8 pe-1">Giảm Thêm 5% cho khách hàng mới với đơn hàng đầu tiên tại App Lixibox (số điện thoại chưa từng mua hàng)</span>
+                            <div class="promo-code-border position-absolute"></div>
+                        </div>
+                    </div>
+                    <!-- cart promo -->
+                    <div class="mt-3 cart-item-wrap bg-white">
+                        <span class="fs-3 d-block py-1 text-center product-title text-dark">ƯU ĐÃI CHO BẠN</span>
+                        <div class="product-promo">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <!-- Carousel indicators -->
+                                    <div id="carousel-product-promo" class="carousel slide" data-bs-ride="carousel">
+                                        <div class="carousel-indicators carousel-indicators-product">
+                                          <button type="button" data-bs-target="#carousel-product-promo" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                          <button type="button" data-bs-target="#carousel-product-promo" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                          <button type="button" data-bs-target="#carousel-product-promo" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                        </div>
+                                        <div class="carousel-inner px-5-md py-4-md">
+                                            <div class="carousel-item active">
+                                                <div class="row">
+                                                    <div class="col-sm-4 col-6">
+                                                        <a href="product-detail.html" class="d-block" style="width: 100%;">
+                                                            <div class="card" style="width: 100%;">
+                                                                <img src="./assets/img/product/mayruamat.png" class="card-img-top" alt="...">
+                                                                <div class="card-body">
+                                                                    <h5 class="card-title">Quà tặng</h5>
+                                                                    <p class="card-text card-text-wrap">[Nhập HSGIFT - FREE Quà 240K] Máy Rửa Mặt Dành Cho Da Nhạy Cảm Halio Sensitive Facial Cleansing & Massaging Device Purple Rain</p>
+                                                                    <span class="card-price-old d-block text-decoration-line-through">900.000 ₫</span>
+                                                                    <span class="card-price-new fw-bold pe-2">709.000 ₫</span>
+                                                                    <span class="badge">21%</span>
+                                                                    <button type="button" class="btn btn-light w-100 fs-7 mt-2 btn-border">
+                                                                        <i class="bi bi-plus"></i>Thêm vào giỏ
+                                                                    </button>
+                                                                </div>
+                                                            </div>
+                                                        </a>
+                                                    </div>
+                                                    <div class="col-sm-4 col-6">
+                                                        <a href="product-detail.html" class="d-block" style="width: 100%;">
+                                                            <div class="card" style="width: 100%;">
+                                                                <img src="./assets/img/product/kemtriseo.jpg" class="card-img-top" alt="...">
+                                                                <div class="card-body">
+                                                                    <h5 class="card-title">Quà tặng</h5>
+                                                                    <p class="card-text card-text-wrap">Kem Xóa Mờ Sẹo Thâm Rỗ Lõm Scar Esthetique 30 ml</p>
+                                                                    <span class="card-price-old d-block text-decoration-line-through">650.000 ₫</span>
+                                                                    <span class="card-price-new fw-bold pe-2">429.000 ₫</span>
+                                                                    <span class="badge">21%</span>
+                                                                    <button type="button" class="btn btn-light w-100 fs-7 mt-2 btn-border">
+                                                                        <i class="bi bi-plus"></i>Thêm vào giỏ
+                                                                    </button>
+                                                                </div>
+                                                            </div>
+                                                        </a>
+                                                    </div>
+                                                    <div class="col-sm-4 d-none d-sm-block">
+                                                        <a href="product-detail.html" class="d-block" style="width: 100%;">
+                                                            <div class="card" style="width: 100%;">
+                                                                <img src="./assets/img/product/aucerin.png" class="card-img-top" alt="...">
+                                                                <div class="card-body">
+                                                                    <h5 class="card-title">Quà tặng</h5>
+                                                                    <p class="card-text card-text-wrap">Nước Tẩy Trang Dành Cho Da Mụn Eucerin Pro Acne Micellar 200ml</p>
+                                                                    <span class="card-price-old d-block text-decoration-line-through">349.000 ₫</span>
+                                                                    <span class="card-price-new fw-bold pe-2">297.000 ₫</span>
+                                                                    <span class="badge">20%</span>
+                                                                    <button type="button" class="btn btn-light w-100 fs-7 mt-2 btn-border">
+                                                                        <i class="bi bi-plus"></i>Thêm vào giỏ
+                                                                    </button>
+                                                                </div>
+                                                            </div>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="carousel-item">
+                                                <div class="row">
+                                                    <div class="col-sm-4 col-6">
+                                                        <a href="product-detail.html" class="d-block" style="width: 100%;">
+                                                            <div class="card" style="width: 100%;">
+                                                                <img src="./assets/img/product/aucerin.png" class="card-img-top" alt="...">
+                                                                <div class="card-body">
+                                                                    <h5 class="card-title">Quà tặng</h5>
+                                                                    <p class="card-text card-text-wrap">Nước Tẩy Trang Dành Cho Da Mụn Eucerin Pro Acne Micellar 200ml</p>
+                                                                    <span class="card-price-old d-block text-decoration-line-through">349.000 ₫</span>
+                                                                    <span class="card-price-new fw-bold pe-2">297.000 ₫</span>
+                                                                    <span class="badge">20%</span>
+                                                                    <button type="button" class="btn btn-light w-100 fs-7 mt-2 btn-border">
+                                                                        <i class="bi bi-plus"></i>Thêm vào giỏ
+                                                                    </button>
+                                                                </div>
+                                                            </div>
+                                                        </a>
+                                                    </div>
+                                                    <div class="col-sm-4 col-6">
+                                                        <a href="product-detail.html" class="d-block" style="width: 100%;">
+                                                            <div class="card" style="width: 100%;">
+                                                                <img src="./assets/img/product/aucerin.png" class="card-img-top" alt="...">
+                                                                <div class="card-body">
+                                                                    <h5 class="card-title">Quà tặng</h5>
+                                                                    <p class="card-text card-text-wrap">Nước Tẩy Trang Dành Cho Da Mụn Eucerin Pro Acne Micellar 200ml</p>
+                                                                    <span class="card-price-old d-block text-decoration-line-through">349.000 ₫</span>
+                                                                    <span class="card-price-new fw-bold pe-2">297.000 ₫</span>
+                                                                    <span class="badge">20%</span>
+                                                                    <button type="button" class="btn btn-light w-100 fs-7 mt-2 btn-border">
+                                                                        <i class="bi bi-plus"></i>Thêm vào giỏ
+                                                                    </button>
+                                                                </div>
+                                                            </div>
+                                                        </a>
+                                                    </div>
+                                                    <div class="col-sm-4 d-none d-sm-block">
+                                                        <a href="product-detail.html" class="d-block" style="width: 100%;">
+                                                            <div class="card" style="width: 100%;">
+                                                                <img src="./assets/img/product/aucerin.png" class="card-img-top" alt="...">
+                                                                <div class="card-body">
+                                                                    <h5 class="card-title">Quà tặng</h5>
+                                                                    <p class="card-text card-text-wrap">Nước Tẩy Trang Dành Cho Da Mụn Eucerin Pro Acne Micellar 200ml</p>
+                                                                    <span class="card-price-old d-block text-decoration-line-through">349.000 ₫</span>
+                                                                    <span class="card-price-new fw-bold pe-2">297.000 ₫</span>
+                                                                    <span class="badge">20%</span>
+                                                                    <button type="button" class="btn btn-light w-100 fs-7 mt-2 btn-border">
+                                                                        <i class="bi bi-plus"></i>Thêm vào giỏ
+                                                                    </button>
+                                                                </div>
+                                                            </div>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="carousel-item">
+                                                <div class="row">
+                                                    <div class="col-sm-4 col-6">
+                                                        <a href="product-detail.html" class="d-block" style="width: 100%;">
+                                                            <div class="card" style="width: 100%;">
+                                                                <img src="./assets/img/product/aucerin.png" class="card-img-top" alt="...">
+                                                                <div class="card-body">
+                                                                    <h5 class="card-title">Quà tặng</h5>
+                                                                    <p class="card-text card-text-wrap">Nước Tẩy Trang Dành Cho Da Mụn Eucerin Pro Acne Micellar 200ml</p>
+                                                                    <span class="card-price-old d-block text-decoration-line-through">349.000 ₫</span>
+                                                                    <span class="card-price-new fw-bold pe-2">297.000 ₫</span>
+                                                                    <span class="badge">20%</span>
+                                                                    <button type="button" class="btn btn-light w-100 fs-7 mt-2 btn-border">
+                                                                        <i class="bi bi-plus"></i>Thêm vào giỏ
+                                                                    </button>
+                                                                </div>
+                                                            </div>
+                                                        </a>
+                                                    </div>
+                                                    <div class="col-sm-4 col-6">
+                                                        <a href="product-detail.html" class="d-block" style="width: 100%;">
+                                                            <div class="card" style="width: 100%;">
+                                                                <img src="./assets/img/product/aucerin.png" class="card-img-top" alt="...">
+                                                                <div class="card-body">
+                                                                    <h5 class="card-title">Quà tặng</h5>
+                                                                    <p class="card-text card-text-wrap">Nước Tẩy Trang Dành Cho Da Mụn Eucerin Pro Acne Micellar 200ml</p>
+                                                                    <span class="card-price-old d-block text-decoration-line-through">349.000 ₫</span>
+                                                                    <span class="card-price-new fw-bold pe-2">297.000 ₫</span>
+                                                                    <span class="badge">20%</span>
+                                                                    <button type="button" class="btn btn-light w-100 fs-7 mt-2 btn-border">
+                                                                        <i class="bi bi-plus"></i>Thêm vào giỏ
+                                                                    </button>
+                                                                </div>
+                                                            </div>
+                                                        </a>
+                                                    </div>
+                                                    <div class="col-sm-4 d-none d-sm-block">
+                                                        <a href="product-detail.html" class="d-block" style="width: 100%;">
+                                                            <div class="card" style="width: 100%;">
+                                                                <img src="./assets/img/product/aucerin.png" class="card-img-top" alt="...">
+                                                                <div class="card-body">
+                                                                    <h5 class="card-title">Quà tặng</h5>
+                                                                    <p class="card-text card-text-wrap">Nước Tẩy Trang Dành Cho Da Mụn Eucerin Pro Acne Micellar 200ml</p>
+                                                                    <span class="card-price-old d-block text-decoration-line-through">349.000 ₫</span>
+                                                                    <span class="card-price-new fw-bold pe-2">297.000 ₫</span>
+                                                                    <span class="badge">20%</span>
+                                                                    <button type="button" class="btn btn-light w-100 fs-7 mt-2 btn-border">
+                                                                        <i class="bi bi-plus"></i>Thêm vào giỏ
+                                                                    </button>
+                                                                </div>
+                                                            </div>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <button class="carousel-control-prev" type="button" data-bs-target="#carousel-product-promo" data-bs-slide="prev">
+                                          <span class="carousel-control-prev-icon bg-dark" aria-hidden="true"></span>
+                                          <span class="visually-hidden">Previous</span>
+                                        </button>
+                                        <button class="carousel-control-next" type="button" data-bs-target="#carousel-product-promo" data-bs-slide="next">
+                                          <span class="carousel-control-next-icon bg-dark" aria-hidden="true"></span>
+                                          <span class="visually-hidden">Next</span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="col-lg-4">
+                    <!-- button pc-->
+                    <div class="d-lg-flex d-none">
+                        <button class="btn btn-add-like w-50 fs-6 me-3" type="submit">MUA THÊM</button>
+                        <button class="btn btn-pink w-50 fs-6" type="submit">ĐẶT HÀNG</button>
+                    </div>
+                    <!-- caution pc -->
+                    <div class="my-3 bg-white card-item-wrap d-sm-block d-none">
+                        <span class="d-block fs-7 py-2 px-3 cart-caution">Thông báo: Lixibox đã bắt đầu xử lý lại đơn hàng và bàn giao đến đơn vị vận chuyển. Tuy nhiên, trong thời gian giãn cách xã hội, đơn hàng của quý khách sẽ giao chậm trễ hơn bình thường, một số khu vực phong toả có thể tạm ngưng đến khi có thông tin mới nhất. Lixibox rất mong quý khách thông cảm.</span>
+                    </div>
+                    <!-- promo code pc-->
+                    <div class="bg-white py-2 px-3 cart-item-wrap d-sm-block d-none">
+                        <label for="inputState" class="form-label fs-6 fw-500"><i class="bi bi-tag pe-2"></i>Mã giảm giá</label>
+                        <select id="inputState" class="form-select fs-7 w-100 cursor-pointer">
+                          <option selected>Mã giảm giá</option>
+                          <option>...</option>
+                        </select>
+                        <div class="promo-code d-flex justify-content-between align-items-center position-relative my-3">
+                            <span class="d-block fw-500 fs-7 py-4 px-3 text-primary">APPLXB</span>
+                            <span class="d-block fs-8 pe-1">Giảm Thêm 5% cho khách hàng mới với đơn hàng đầu tiên tại App Lixibox (số điện thoại chưa từng mua hàng)</span>
+                            <div class="promo-code-border position-absolute"></div>
+                        </div>
+                    </div>
+                    <!-- cart price -->
+                    <div class="bg-white my-3 py-3 px-4 cart-item-wrap">
+                        <div class="d-flex justify-content-between">
+                            <span class="text-secondary d-inline-block py-1">Tiền hàng:</span>
+                            <span>2.458.000 ₫</span>
+                        </div>
+                        <div class="d-flex justify-content-between">
+                            <span class="text-secondary d-inline-block py-1">Giảm giá:</span>
+                            <span>0 ₫</span>
+                        </div>
+                        <!-- Totol price pc -->
+                        <div class="d-flex justify-content-between mt-2 pt-2 border-top d-none d-lg-flex">
+                            <span class="text-secondary d-inline-block">Tạm tính:</span>
+                            <span class="text-pink-primary">2.458.000 ₫</span>
+                        </div>  
+                    </div>
+                    <!-- Lixicoin -->
+                    <div class="bg-white my-3 py-3 px-4 cart-item-wrap d-none d-sm-block">
+                        <span class="d-block text-center fs-7">Bạn sẽ nhận được</span>
+                        <span class="d-block text-center fs-2">2.458 Lixicoin</span>
+                    </div>
+                </div>               
+            </div>
+
+            <!-- button total price mobile -->
+            <div class="container d-block d-lg-none fixed-bottom">
+                <div class="bg-white cart-item-wrap p-3">
+                    <div class="d-flex justify-content-between mb-2">
+                        <span class="text-secondary d-inline-block">Tạm tính:</span>
+                        <span class="text-pink-primary">2.458.000 ₫</span>
+                    </div>  
+                    <button class="btn btn-pink w-100 fs-6" type="submit">ĐẶT HÀNG</button>
+                </div>
+            </div>
+            <div class="container d-block d-lg-none">
+                <div style="height: 82px;">
+                </div>
+            </div>
+            
+        </div>
+    </div>
+  
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,683 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=s, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.6.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="./assets/styles/base.css">
+    <link rel="stylesheet" href="./assets/styles/index.css">
+    <link rel="stylesheet" href="./assets/styles/detail.css">
+    <title>Halio-Lixibox Shop</title>
+    <link rel="shortcut icon" href="./assets/img/fav.ico">
+</head>
+<body>
+    <header class="header">
+        <!-- navbar top -->
+        <div class="navbar-top d-none d-md-block d-xl-none">
+            <div class="container">
+                <nav class="navbar">
+                    <span class="text-white py-1">[GIẢM ĐẾN 70% - Nhập LXBLOVEU] Khi mua hàng</span>
+                    <div class="navbar-top-right">
+                        <a href="" class="pe-3 "><i class="bi bi-truck pe-2"></i>Kiểm tra đơn hàng</a>
+                        <a href="" class=""><i class="bi bi-coin pe-2"></i>Lixicoin</a>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <!-- primary nav -->
+        <div class="container">
+            <nav class="navbar-primary navbar justify-content-between ">
+                <a class="navbar-brand d-sm-block d-none" href="index.html">
+                    <svg viewBox="0 0 462 63" data-radium="true" style="width: 140px; height: 20px;">
+                        <g fill="#000204" fill-rule="nonzero" data-radium="true">
+                            <path d="M87.18,1.91 L87.18,61.15 L79.09,61.15 L79.09,10.15 C79.09,6.68 76.9,3.68 71.88,2.31 L71.88,1.9 L87.18,1.91 Z"></path>
+                            <path d="M173.61,60.74 L173.61,61.15 L164.79,61.15 C161.173452,61.1081105 157.808584,59.291082 155.79,56.29 L142.36,35.66 L122.36,61.15 L117.75,61.15 L140.25,32.42 L123.33,6.6 C122.703528,5.65784732 121.910569,4.8377778 120.99,4.18 C120.013371,3.47266848 118.915161,2.95067988 117.75,2.64 L116.29,2.32 L116.29,1.90993035 L125.11,1.91 C128.720827,1.89704795 132.09879,3.69112183 134.11,6.69 L146.11,25.05 L164.24,1.91 L168.85,1.91 L148.2,28.32 L166.48,56.32 C167.119891,57.3060734 167.945163,58.1585154 168.91,58.83 C169.909048,59.5491342 171.035723,60.0717486 172.23,60.37 L173.61,60.74 Z"></path>
+                            <path d="M46,61.15 L43.94,57.5 L16.05,57.5 L16.05,1.91 L0.83,1.91 L0.83,2.32 C5.77,3.69 7.96,6.69 7.96,10.16 L7.96,61.16 L46,61.15 Z"></path>
+                            <path d="M213.18,1.91 L213.18,61.15 L205.09,61.15 L205.09,10.15 C205.09,6.68 202.9,3.68 197.89,2.31 L197.89,1.9 L213.18,1.91 Z"></path>
+                            <path d="M294.1,45.77 C294.1,49.09 291.68,61.15 271.2,61.15 L249.52,61.15 L249.52,10.25 C249.50416,6.14950428 246.390487,2.72489638 242.31,2.32 L242.31,1.91 L271.2,1.91 C289.33,1.67 291.51,14.78 291.51,17.37 C291.51,25.54 286.09,29.26 281.24,30.96 C287.06,32.32 294.1,35.98 294.1,45.77 Z M258.42,29.18 L271.61,29.18 C274.603203,29.1702515 277.466083,27.9542274 279.551328,25.8068768 C281.636573,23.6595262 282.768076,20.7622007 282.69,17.77 C282.69,9.44 277.27,4.77 269.91,4.77 L258.42,4.77 L258.42,29.18 Z M284.31,45.37 C284.31,33.15 271.45,32.01 269.02,32.01 L258.42,32.01 L258.42,58.01 L271.2,58.01 C271.2,58.01 284.31,57.67 284.31,45.37 Z"></path>
+                            <path d="M382,31.37 C382,52.81 369.21,62.2 353.43,62.2 C337.65,62.2 324.87,52.81 324.87,31.37 C324.87,10.65 337.65,0.62 353.43,0.62 C369.21,0.62 382,10.49 382,31.37 Z M372.29,31.37 C372.29,12.37 363.87,3.29 353.43,3.29 C342.99,3.29 334.58,12.51 334.58,31.37 C334.58,50.95 343.07,59.45 353.43,59.45 C363.79,59.45 372.28,50.95 372.28,31.37 L372.29,31.37 Z"></path>
+                            <path d="M461.94,60.74 L461.94,61.15 L453.12,61.15 C449.500767,61.118512 446.13136,59.2990322 444.12,56.29 L430.7,35.66 L410.7,61.15 L406.1,61.15 L428.6,32.42 L411.69,6.6 C411.057133,5.65974152 410.261283,4.84018478 409.34,4.18 C408.364427,3.47088969 407.265874,2.94873795 406.1,2.64 L404.65,2.32 L404.65,1.90986061 L413.47,1.91 C417.08216,1.89164564 420.462519,3.68699216 422.47,6.69 L434.47,25.05 L452.59,1.91 L457.21,1.91 L436.53,28.32 L454.82,56.32 C455.459891,57.3060734 456.285163,58.1585154 457.25,58.83 C458.245423,59.5490486 459.368814,60.0717138 460.56,60.37 L461.94,60.74 Z"></path>
+                        </g>
+                    </svg>
+                </a>
+                <!-- search -->
+                <form class="d-flex w-50 form-search-wrap my-3 d-none d-md-flex">
+                    <input class="form-control form-search" type="search" placeholder="Tìm kiếm sản phẩm" aria-label="Search">
+                    <button class="btn btn-search" type="submit"><i class="bi bi-search pe-2 fs-5"></i></button>
+                </form>
+
+                <!-- search mobile -->
+                <a href="index.html" style="width:8%;"><img src="./assets/img/fav.ico" class="d-sm-block d-md-none w-100" alt=""></a>
+                <div class="d-xs-block d-sm-block d-md-none my-2" style="width:70%;">
+                    <form class="d-flex">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-secondary" type="submit">Search</button>
+                    </form>
+                </div>
+
+                <!-- login/logout -->
+                <a href="login.html" class="d-none d-lg-block">Đăng nhập/Đăng ký</a>
+                <a href="login.html"><i class="d-lg-none fs-4 bi bi-person"></i></a>
+                
+                <!-- icon cart -->
+                <a href="cart.html" class="fs-4"><i class="bi bi-bag position-relative" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Cart">
+                    <span class="position-absolute start-100 translate-middle rounded-pill text-white px-1 cart-noti">3
+                    <span class="visually-hidden">unread messages</span>
+                    </span></i>
+                </a>
+                
+                  
+            </nav>
+        </div>
+        <!-- sencondary nav -->
+        <div class="container d-none d-md-block">
+            <nav class="navbar p-0">
+                <ul class="nav justify-content-between w-100">
+                    <li class="nav-item position-relative">
+                      <a class="nav-link px-0 py-3 fs-6 link-item" href="home-product.html">SHOP BEAUTY</a>
+                      <!-- Menu -->
+                      <div class="container-fluid bg-dark">
+
+                      </div>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link px-0 py-3 fs-6 link-item" href="home-product.html">SHOP MẸ VÀ BÉ</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link px-0 py-3 fs-6 link-item" href="home-product.html">ƯU ĐÃI</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link px-0 py-3 fs-6 link-item" href="home-product.html">THƯƠNG HIỆU</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link px-0 py-3 fs-6 link-item" href="home-product.html">MAGAZINE</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link px-0 py-3 fs-6 link-item" href="home-product.html"><i class="bi bi-youtube pe-2 text-danger"></i>FEED</a>
+                    </li>
+                  </ul>
+            </nav>
+        </div>
+    </header>
+    <!-- breadcrumb -->
+    <div class="breadrumb-wrap d-none d-sm-block">
+        <div class="container">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb mb-0">
+                    <li class="breadcrumb-item py-2 position-relative"><a href="index.html" class="breadcrumb-link">Trang chủ</a></li>
+                    <li class="breadcrumb-item py-2 position-relative"><a href="home-product.html" class="breadcrumb-link">Sản phẩm</a></li>
+                    <li class="breadcrumb-item py-2 position-relative active" aria-current="page">Skincare & Makeup</li>
+                </ol>
+            </nav>
+        </div>
+    </div>
+    <!-- detail -->
+    <div class="container my-4">
+        <div class="row">
+            <!-- product img -->
+            <div class="col-lg-7">
+                <div class="d-flex flex-column justify-content-center">
+                    <div class="main_image"> <img src="./assets/img/product/mrm1.jpg" id="main_product_image" class="w-100"> </div>
+                    <div class="thumbnail-images">
+                        <ul id="thumbnail" class="row justify-content-between">
+                            <li class="col-3"><img class="w-100" onclick="changeImage(this)" src="./assets/img/product/mayruamat.png"></li>
+                            <li class="col-3"><img class="w-100" onclick="changeImage(this)" src="./assets/img/product/mrm2.png" ></li>
+                            <li class="col-3"><img class="w-100" onclick="changeImage(this)" src="./assets/img/product/mrm3.png" ></li>
+                            <li class="col-3"><img class="w-100" onclick="changeImage(this)" src="./assets/img/product/mrm1.jpg" ></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-5">
+                <a href="" class="text-primary">Halio</a>
+                <span class="detail-text d-block py-2">[Nhập HSGIFT - FREE Quà 240K] Máy Rửa Mặt Dành Cho Da Nhạy Cảm Halio Sensitive Facial Cleansing & Massaging Device Purple Rain</span>
+                <!-- rate -->
+                <div class="detail-rate">
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-half"></i>
+                    <span class="total-rate">(12)</span>
+                </div>
+                <!-- price -->
+                <div class="price py-2">
+                    <span class="detail-price-new fs-4 pe-2">709.000 ₫</span>
+                    <span class="detail-price-old text-secondary text-decoration-line-through pe-2">900.000 ₫</span>
+                    <span class="badge">-21%</span>
+                </div>
+                <!-- choose color -->
+                <div class="">
+                    <span class="fs-7">Màu sắc: </span><span class="fs-7 text-secondary">Purple Rain</span>
+                    <div class="colors">
+                    <ul id="marker" class="list-unstyled d-flex py-2">
+                        <li id="marker-1"></li>
+                        <li id="marker-2"></li>
+                        <li id="marker-3" class="colors-active"></li>
+                    </ul>
+                    </div>
+                </div>
+                <!-- promo code -->
+                <div class="promo-code d-flex justify-content-between align-items-center position-relative mb-3">
+                    <span class="d-block fw-500 fs-7 py-4 px-3 text-primary">APPLXB</span>
+                    <span class="d-block fs-8 pe-1">Giảm Thêm 5% cho khách hàng mới với đơn hàng đầu tiên tại App Lixibox (số điện thoại chưa từng mua hàng)</span>
+                    <div class="promo-code-border position-absolute"></div>
+                </div>
+                <!-- info -->
+                <div class="info-wrap">
+                    <div class="row">
+                        <div class="col text-center py-1">
+                            <i class="bi bi-coin d-block fs-4"></i>
+                            <a href=""><span class="fs-8">Nhận ngay <span class="fw-500">709 Lixicoin</span> khi mua sản phẩm này</span></a>
+                        </div>
+                        <div class="col text-center py-1">
+                            <i class="bi bi-truck d-block fs-4"></i>
+                            <span class="fs-8">Miễn phí giao hàng cho sản phẩm này</span>
+                        </div>
+                        <div class="col text-center py-1">
+                            <i class="bi bi-arrow-repeat d-block fs-4"></i>
+                            <span class="fs-8">Đổi trả trong vòng<span class="fw-500"> 7 ngày</span></span>
+                            <a href="" class="d-block fs-8 text-primary">Xem chi tiết</a>
+                        </div>
+                    </div>
+                    <div class="info-ship w-100 d-flex justify-content-between align-items-center p-2">
+                        <span class="fs-8"><i class="bi bi-geo-alt pe-2 fs-5 align-middle"></i>Xem phí giao hàng</span></i>
+                        <i class="bi bi-chevron-right"></i>
+                    </div>
+                </div>
+                <!-- button -->
+                <div class="d-flex py-3 d-none d-lg-flex">
+                    <button class="btn btn-pink w-50 me-3" type="submit"><i class="bi bi-bag pe-2 fs-6"></i>Thêm vào giỏ</button>
+                    <button class="btn btn-add-like w-50 fs-7" type="submit"><i class="bi bi-heart pe-2 fs-6 align-middle text-secondary"></i>Yêu thích</button>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    <!-- info detail -->
+    <div class="container">
+        <div class="info-item pb-2 mb-2">
+            <span class="fs-4 d-block my-4">THÔNG TIN</span>
+            <div class="info-text-wrap info-text">
+                <p>Halio Sensitive Facial Cleansing & Massaging Device sở hữu thiết kế đặc biệt dành riêng cho làn da nhạy cảm và được cải tiến với nhiều tính năng mới, thông minh:</p><span id="dots">...</span><span id="more">
+                <p>1/ Đầu gai siêu mảnh chỉ 0.6mm Halio Sensitive vẫn được ứng dụng công nghệ làm sạch tiên tiến Sonic Wave Cleansing giúp làm sạch sâu và loại bỏ tới 99,5% bụi bẩn và dầu thừa cũng như lớp trang điểm còn sót lại - nguyên nhân chính gây mụn và dị ứng da. Đầu gai silicon cao cấp kháng khuẩn siêu mảnh 0.6mm giúp Halio Sensitive nhẹ nhàng với cả những làn da nhạy cảm nhất.</p>
+                <p>2/ Đạt tiêu chuẩn IPX7 chống nước hiệu quả Halio Sensitive được chứng nhận có độ chống nước IPX7 với khả năng bảo vệ sản phẩm khỏi tác động của việc ngâm trong nước lên tới 1 mét, trong thời gian đến 30 phút.</p>
+                <p>3/ Chu trình làm sạch da tiêu chuẩn tự động ngắt sau 2 phút Halio Sensitive được thiết kế với chu trình làm sạch da tiêu chuẩn và khoa học, máy sẽ được ngắt tự động sau 2 phút để đảm bảo thời gian chạy máy của bạn vừa đủ để làm sạch da mà không quá lâu khiến da đau rát.</p>
+                <p>4/ Hộp treo nam châm tiện lợi Halio Sensitive sở hữu hộp tròn gồm nam châm và dây sạc tiện dụng. Với thiết kế hộp thông minh mới này, bạn dễ dàng bảo quản máy bằng cách treo ở bất kì đâu và đính máy vào phần nam châm có sẵn sau mỗi lần sử dụng.</p>
+                <p>5/ Chế độ bảo hành 1 năm 1 đổi 1 Halio Sensitive có chế độ bảo hành dễ dàng, nhanh chóng trong vòng 1 năm. Bạn sẽ được đổi máy mới hoàn toàn trong vòng 1 năm đầu sau khi mua máy nếu máy gặp bất kì vấn đề gì do lỗi của nhà sản xuất. Chi tiết như sau:</p>
+                <p>- 1 đổi 1 trong vòng 1 năm chỉ áp dụng cho sản phẩm bị lỗi kỹ thuật do nhà sản xuất và không thể sửa được</p>
+                <p>- Thời hạn bảo hành trong vòng 1 năm tính từ ngày khách hàng đặt đơn hàng</p>
+                <p>- Lixibox chỉ nhận bảo hành khi sản phẩm đưa về có đầy đủ phụ kiện hộp nhựa và cáp sạc.&nbsp;</p>
+                <p>*Chế độ bảo hành của sản phẩm đi kèm với mã đơn hàng*. Không có phiếu bảo hành bằng giấy.</p>
+                <p>+ Đối với sản phẩm mua online tại lixibox.com, khách hàng gọi điện hotline 1800 2040 hoặc inbox fanpage Lixibox để được hướng dẫn bảo hành. Phí vận chuyển do người gửi chi trả, tức là khách hàng chi trả lượt đi và Lixibox chi trả lượt gửi về. Cửa hàng Lixibox không nhận bảo hành sản phẩm khách đã mua ở online lixibox.com. + Đối với sản phẩm mua tại cửa hàng: khách hàng vui lòng đến cửa hàng đã mua sản phẩm, kèm mã đơn hàng hoặc số điện thoại&nbsp;để gửi trả sản phẩm muốn bảo hành.</p>
+                </span>
+            <button onclick="myFunction()" id="myBtn" class="btn-readmore">Xem thêm</button>
+
+            </div>
+            <div class="d-flex align-items-center">
+                <img src="./assets/img/halio.png" alt="" style="height:auto; width: 120px;">
+                <div class="fs-7 ps-3 mb-2">
+                    <div class="d-block">
+                    <span class="info-item-title d-inline-block">Hãng:</span><span class="text-primary">Halio</span>
+                    </div>
+                    <div class="d-block">
+                        <span class="info-item-title d-inline-block">Thương hiệu:</span><span class="info-text">United States</span>
+                    </div>
+                    <div class="d-block">
+                        <span class="info-item-title d-inline-block">Sản xuất tại:</span><span class="info-text">China</span>
+                    </div>
+                    <div class="d-block">
+                        <span class="info-item-title d-inline-block">Dung tích:</span><span class="info-text">108.2 g</span>
+                    </div>
+                </div>
+            </div>
+            <span class="info-text d-block">Halio là thương hiệu thiết chăm sóc da và nha khoa đến từ nước Mỹ. Dòng sản phẩm của hãng tích hợp thiết kế sáng tạo, công nghệ hiện đại, đem đến hiệu quả tối ưu, giúp bạn luôn tươi sáng, rạng ngời</span>
+        </div>
+        <div class="info-item info-text mb-3">
+            <div class="accordion accordion-flush" id="accordionFlushExample">
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="flush-headingOne">
+                    <button class="accordion-button px-0 collapsed fs-7 fw-500" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                      Cách sử dụng
+                    </button>
+                  </h2>
+                  <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body px-0">
+                        <p>- Dùng sau bước sữa rửa mặt và nước cân bằng da.<br>
+                            - Cho một lượng sản phẩm vừa đủ ra đầu ngón tay và thoa đều lên mặt.<br>
+                            - Có thể dùng hàng ngày và dùng dưới lớp trang điểm.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="flush-headingTwo">
+                    <button class="accordion-button px-0 collapsed fs-7 fw-500" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                      Thành phẩn
+                    </button>
+                  </h2>
+                  <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body px-0">
+                        <p>Organic Aloe, Witch Hazel, Botanical Hyaluronic Acid, Kosher Vegetable Glycerin, Msm, Organic Jojoba Oil, Wildcrafted Green Tea, Geranium Essential Oil, Sodium Ascorbyl Phosphate (Vitamin C), Tocopheryl Acetate (Vitamin E), Organic Gotu Kola, Organic Horsetail, Organic Geranium, Organic Dandelion, Sodium Benozate, Potassium Sorbate, Ethyl Hexyl Glycerin, Hydroxyethyl Cellulose, Carrageenan Gum</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+        </div>  
+    </div>
+    <!-- recommend product -->
+    <div class="container">
+        <span class="fs-3 d-block py-2 text-center product-title">SẢN PHẨM LIÊN QUAN</span>
+        <div class="product-recommend">
+            <div class="row">
+                <div class="col-md-12">
+                    <!-- Carousel indicators -->
+                    <div id="carousel-product-recommend" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-indicators carousel-indicators-product">
+                          <button type="button" data-bs-target="#carousel-product-recommend" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                          <button type="button" data-bs-target="#carousel-product-recommend" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                          <button type="button" data-bs-target="#carousel-product-recommend" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                        </div>
+                        <div class="carousel-inner px-3 py-4">
+                            <div class="carousel-item active">
+                                <div class="row">
+                                    <div class="col-lg-3 col-md-4 col-6">
+                                        <a href="" class="d-block" style="width: 100%;">
+                                            <div class="card" style="width: 100%;">
+                                                <img src="./assets/img/product/mayruamat.png" class="card-img-top" alt="...">
+                                                <div class="card-body">
+                                                    <h5 class="card-title">Halio</h5>
+                                                    <p class="card-text card-text-wrap">[Nhập HSGIFT - FREE Quà 240K] Máy Rửa Mặt Dành Cho Da Nhạy Cảm Halio Sensitive Facial Cleansing & Massaging Device Purple Rain</p>
+                                                    <div class="card-rate">
+                                                        <i class="bi bi-star-fill"></i>
+                                                        <i class="bi bi-star-fill"></i>
+                                                        <i class="bi bi-star-fill"></i>
+                                                        <i class="bi bi-star-fill"></i>
+                                                        <i class="bi bi-star-half"></i>
+                                                        <span class="total-rate">(12)</span>
+                                                    </div>
+                                                    <span class="card-price-old d-block text-decoration-line-through">900.000 ₫</span>
+                                                    <span class="card-price-new fw-bold pe-2">709.000 ₫</span>
+                                                    <span class="badge">21%</span>
+                                                    
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="col-lg-3 col-md-4  col-6">
+                                        <a href="" class="d-block" style="width: 100%;">
+                                            <div class="card" style="width: 100%;">
+                                                <img src="./assets/img/product/kemtriseo.jpg" class="card-img-top" alt="...">
+                                                <div class="card-body">
+                                                    <h5 class="card-title">Rejuvaskin</h5>
+                                                    <p class="card-text card-text-wrap">Kem Xóa Mờ Sẹo Thâm Rỗ Lõm Scar Esthetique 30 ml</p>
+                                                    <div class="card-rate">
+                                                        <i class="bi bi-star-fill"></i>
+                                                        <i class="bi bi-star-fill"></i>
+                                                        <i class="bi bi-star-fill"></i>
+                                                        <i class="bi bi-star-fill"></i>
+                                                        <i class="bi bi-star-half"></i>
+                                                        <span class="total-rate">(12)</span>
+                                                    </div>
+                                                    <span class="card-price-old d-block text-decoration-line-through">650.000 ₫</span>
+                                                    <span class="card-price-new fw-bold pe-2">429.000 ₫</span>
+                                                    <span class="badge">21%</span>
+                                                    
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="col-lg-3 col-md-4 d-none d-sm-block">
+                                        <a href="" class="d-block" style="width: 100%;">
+                                            <div class="card" style="width: 100%;">
+                                                <img src="./assets/img/product/aucerin.png" class="card-img-top" alt="...">
+                                                <div class="card-body">
+                                                    <h5 class="card-title">Eucerin</h5>
+                                                    <p class="card-text card-text-wrap">Nước Tẩy Trang Dành Cho Da Mụn Eucerin Pro Acne Micellar 200ml</p>
+                                                    <div class="card-rate">
+                                                        <i class="bi bi-star-fill"></i>
+                                                        <i class="bi bi-star-fill"></i>
+                                                        <i class="bi bi-star-fill"></i>
+                                                        <i class="bi bi-star-fill"></i>
+                                                        <i class="bi bi-star"></i>
+                                                        <span class="total-rate">(1)</span>
+                                                    </div>
+                                                    <span class="card-price-old d-block text-decoration-line-through">349.000 ₫</span>
+                                                    <span class="card-price-new fw-bold pe-2">297.000 ₫</span>
+                                                    <span class="badge">20%</span>
+                                                    
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="col-lg-3 d-lg-block d-md-none d-none d-sm-none">
+                                        <a href="" class="d-block" style="width: 100%;">
+                                            <div class="card" style="width: 100%;">
+                                                <img src="./assets/img/product/paula.png" class="card-img-top" alt="...">
+                                                <div class="card-body">
+                                                    <h5 class="card-title">Paula's Choice</h5>
+                                                    <p class="card-text card-text-wrap">Kem Dưỡng Giảm Nếp Nhăn Paula's Choice Chứa 0.3% Retinol Và 2% Bakuchiol 30ml</p>
+                                                    <div class="card-rate">
+                                                        <i class="bi bi-star"></i>
+                                                        <i class="bi bi-star"></i>
+                                                        <i class="bi bi-star"></i>
+                                                        <i class="bi bi-star"></i>
+                                                        <i class="bi bi-star"></i>
+                                                    </div>
+                                                    <span class="card-price-old d-block text-decoration-line-through">1.699.000 ₫</span>
+                                                    <span class="card-price-new fw-bold pe-2">1.299.000 ₫</span>
+                                                    <span class="badge">23%</span>
+                                                    
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="row">
+                                    <div class="col-lg-3 col-md-4 col-6">
+                                        <a href="" class="d-block" style="width: 100%;">
+                                            <div class="card" style="width: 100%;">
+                                                <img src="./assets/img/product/mayruamat.png" class="card-img-top" alt="...">
+                                                <div class="card-body">
+                                                    <h5 class="card-title">Halio</h5>
+                                                    <p class="card-text card-text-wrap">[Nhập HSGIFT - FREE Quà 240K] Máy Rửa Mặt Dành Cho Da Nhạy Cảm Halio Sensitive Facial Cleansing & Massaging Device Purple Rain</p>
+                                                    <div class="card-rate">
+                                                        <i class="bi bi-star-fill"></i>
+                                                        <i class="bi bi-star-fill"></i>
+                                                        <i class="bi bi-star-fill"></i>
+                                                        <i class="bi bi-star-fill"></i>
+                                                        <i class="bi bi-star-half"></i>
+                                                        <span class="total-rate">(12)</span>
+                                                    </div>
+                                                    <span class="card-price-old d-block text-decoration-line-through">900.000 ₫</span>
+                                                    <span class="card-price-new fw-bold pe-2">709.000 ₫</span>
+                                                    <span class="badge">21%</span>
+                                                    
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="col-lg-3 col-md-4 col-6">
+                                        <a href="" class="d-block" style="width: 100%;">
+                                            <div class="card" style="width: 100%;">
+                                                <img src="./assets/img/product/mayruamat.png" class="card-img-top" alt="...">
+                                                <div class="card-body">
+                                                    <h5 class="card-title">Halio</h5>
+                                                    <p class="card-text card-text-wrap">[Nhập HSGIFT - FREE Quà 240K] Máy Rửa Mặt Dành Cho Da Nhạy Cảm Halio Sensitive Facial Cleansing & Massaging Device Purple Rain</p>
+                                                    <div class="card-rate">
+                                                        <i class="bi bi-star-fill"></i>
+                                                        <i class="bi bi-star-fill"></i>
+                                                        <i class="bi bi-star-fill"></i>
+                                                        <i class="bi bi-star-fill"></i>
+                                                        <i class="bi bi-star-half"></i>
+                                                        <span class="total-rate">(12)</span>
+                                                    </div>
+                                                    <span class="card-price-old d-block text-decoration-line-through">900.000 ₫</span>
+                                                    <span class="card-price-new fw-bold pe-2">709.000 ₫</span>
+                                                    <span class="badge">21%</span>
+                                                    
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="col-lg-3 col-md-4 d-none d-sm-block">
+                                        <a href="" class="d-block" style="width: 100%;">
+                                            <div class="card" style="width: 100%;">
+                                                <img src="./assets/img/product/mayruamat.png" class="card-img-top" alt="...">
+                                                <div class="card-body">
+                                                    <h5 class="card-title">Halio</h5>
+                                                    <p class="card-text card-text-wrap">[Nhập HSGIFT - FREE Quà 240K] Máy Rửa Mặt Dành Cho Da Nhạy Cảm Halio Sensitive Facial Cleansing & Massaging Device Purple Rain</p>
+                                                    <div class="card-rate">
+                                                        <i class="bi bi-star-fill"></i>
+                                                        <i class="bi bi-star-fill"></i>
+                                                        <i class="bi bi-star-fill"></i>
+                                                        <i class="bi bi-star-fill"></i>
+                                                        <i class="bi bi-star-half"></i>
+                                                        <span class="total-rate">(12)</span>
+                                                    </div>
+                                                    <span class="card-price-old d-block text-decoration-line-through">900.000 ₫</span>
+                                                    <span class="card-price-new fw-bold pe-2">709.000 ₫</span>
+                                                    <span class="badge">21%</span>
+                                                    
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="col-lg-3 d-lg-block d-md-none d-none d-sm-none">
+                                        <a href="" class="d-block" style="width: 100%;">
+                                            <div class="card" style="width: 100%;">
+                                                <img src="./assets/img/product/mayruamat.png" class="card-img-top" alt="...">
+                                                <div class="card-body">
+                                                    <h5 class="card-title">Halio</h5>
+                                                    <p class="card-text card-text-wrap">[Nhập HSGIFT - FREE Quà 240K] Máy Rửa Mặt Dành Cho Da Nhạy Cảm Halio Sensitive Facial Cleansing & Massaging Device Purple Rain</p>
+                                                    <div class="card-rate">
+                                                        <i class="bi bi-star-fill"></i>
+                                                        <i class="bi bi-star-fill"></i>
+                                                        <i class="bi bi-star-fill"></i>
+                                                        <i class="bi bi-star-fill"></i>
+                                                        <i class="bi bi-star-half"></i>
+                                                        <span class="total-rate">(12)</span>
+                                                    </div>
+                                                    <span class="card-price-old d-block text-decoration-line-through">900.000 ₫</span>
+                                                    <span class="card-price-new fw-bold pe-2">709.000 ₫</span>
+                                                    <span class="badge">21%</span>
+                                                    
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="row">
+                                    <div class="col-lg-3 col-md-4 col-6">
+                                        <a href="" class="d-block" style="width: 100%;">
+                                            <div class="card" style="width: 100%;">
+                                                <img src="./assets/img/product/mayruamat.png" class="card-img-top" alt="...">
+                                                <div class="card-body">
+                                                    <h5 class="card-title">Halio</h5>
+                                                    <p class="card-text card-text-wrap">[Nhập HSGIFT - FREE Quà 240K] Máy Rửa Mặt Dành Cho Da Nhạy Cảm Halio Sensitive Facial Cleansing & Massaging Device Purple Rain</p>
+                                                    <div class="card-rate">
+                                                        <i class="bi bi-star-fill"></i>
+                                                        <i class="bi bi-star-fill"></i>
+                                                        <i class="bi bi-star-fill"></i>
+                                                        <i class="bi bi-star-fill"></i>
+                                                        <i class="bi bi-star-half"></i>
+                                                        <span class="total-rate">(12)</span>
+                                                    </div>
+                                                    <span class="card-price-old d-block text-decoration-line-through">900.000 ₫</span>
+                                                    <span class="card-price-new fw-bold pe-2">709.000 ₫</span>
+                                                    <span class="badge">21%</span>
+                                                    
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="col-lg-3 col-md-4 col-6">
+                                        <a href="" class="d-block" style="width: 100%;">
+                                            <div class="card" style="width: 100%;">
+                                                <img src="./assets/img/product/mayruamat.png" class="card-img-top" alt="...">
+                                                <div class="card-body">
+                                                    <h5 class="card-title">Halio</h5>
+                                                    <p class="card-text card-text-wrap">[Nhập HSGIFT - FREE Quà 240K] Máy Rửa Mặt Dành Cho Da Nhạy Cảm Halio Sensitive Facial Cleansing & Massaging Device Purple Rain</p>
+                                                    <div class="card-rate">
+                                                        <i class="bi bi-star-fill"></i>
+                                                        <i class="bi bi-star-fill"></i>
+                                                        <i class="bi bi-star-fill"></i>
+                                                        <i class="bi bi-star-fill"></i>
+                                                        <i class="bi bi-star-half"></i>
+                                                        <span class="total-rate">(12)</span>
+                                                    </div>
+                                                    <span class="card-price-old d-block text-decoration-line-through">900.000 ₫</span>
+                                                    <span class="card-price-new fw-bold pe-2">709.000 ₫</span>
+                                                    <span class="badge">21%</span>
+                                                    
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="col-lg-3 col-md-4 d-none d-sm-block">
+                                        <a href="" class="d-block" style="width: 100%;">
+                                            <div class="card" style="width: 100%;">
+                                                <img src="./assets/img/product/mayruamat.png" class="card-img-top" alt="...">
+                                                <div class="card-body">
+                                                    <h5 class="card-title">Halio</h5>
+                                                    <p class="card-text card-text-wrap">[Nhập HSGIFT - FREE Quà 240K] Máy Rửa Mặt Dành Cho Da Nhạy Cảm Halio Sensitive Facial Cleansing & Massaging Device Purple Rain</p>
+                                                    <div class="card-rate">
+                                                        <i class="bi bi-star-fill"></i>
+                                                        <i class="bi bi-star-fill"></i>
+                                                        <i class="bi bi-star-fill"></i>
+                                                        <i class="bi bi-star-fill"></i>
+                                                        <i class="bi bi-star-half"></i>
+                                                        <span class="total-rate">(12)</span>
+                                                    </div>
+                                                    <span class="card-price-old d-block text-decoration-line-through">900.000 ₫</span>
+                                                    <span class="card-price-new fw-bold pe-2">709.000 ₫</span>
+                                                    <span class="badge">21%</span>
+                                                    
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="col-lg-3 d-lg-block d-md-none d-none d-sm-none">
+                                        <a href="" class="d-block" style="width: 100%;">
+                                            <div class="card" style="width: 100%;">
+                                                <img src="./assets/img/product/mayruamat.png" class="card-img-top" alt="...">
+                                                <div class="card-body">
+                                                    <h5 class="card-title">Halio</h5>
+                                                    <p class="card-text card-text-wrap">[Nhập HSGIFT - FREE Quà 240K] Máy Rửa Mặt Dành Cho Da Nhạy Cảm Halio Sensitive Facial Cleansing & Massaging Device Purple Rain</p>
+                                                    <div class="card-rate">
+                                                        <i class="bi bi-star-fill"></i>
+                                                        <i class="bi bi-star-fill"></i>
+                                                        <i class="bi bi-star-fill"></i>
+                                                        <i class="bi bi-star-fill"></i>
+                                                        <i class="bi bi-star-half"></i>
+                                                        <span class="total-rate">(12)</span>
+                                                    </div>
+                                                    <span class="card-price-old d-block text-decoration-line-through">900.000 ₫</span>
+                                                    <span class="card-price-new fw-bold pe-2">709.000 ₫</span>
+                                                    <span class="badge">21%</span>
+                                                    
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carousel-product-recommend" data-bs-slide="prev">
+                          <span class="carousel-control-prev-icon bg-dark" aria-hidden="true"></span>
+                          <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carousel-product-recommend" data-bs-slide="next">
+                          <span class="carousel-control-next-icon bg-dark" aria-hidden="true"></span>
+                          <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+    </div>
+
+    <!-- footer mobile -->
+    <div class="d-sm-block container d-lg-none fixed-bottom">
+        <div class="p-2 bg-white">
+            <div class="d-flex py-3">
+                <button class="btn btn-pink w-50 me-3" type="submit"><i class="bi bi-bag pe-2 fs-6"></i>Thêm vào giỏ</button>
+                <button class="btn btn-add-like w-50 fs-7" type="submit"><i class="bi bi-heart pe-2 fs-6 align-middle text-secondary"></i>Yêu thích</button>
+            </div>
+        </div>
+    </div>
+    <div class="container d-block d-lg-none">
+        <div style="height: 84px;">
+                    
+        </div>
+    </div>
+    <footer class="footer bg-dark d-none d-lg-block">
+        <div class="container py-4">
+            <div class="row">
+                <div class="col-md-3 ps-0">
+                    <a href="#" class="d-block mb-3">
+                        <svg viewBox="0 0 462 63" data-radium="true" style="width: 150px;"><g fill="rgba(255, 255, 255, .9)" fill-rule="nonzero" data-radium="true"><path d="M87.18,1.91 L87.18,61.15 L79.09,61.15 L79.09,10.15 C79.09,6.68 76.9,3.68 71.88,2.31 L71.88,1.9 L87.18,1.91 Z"></path><path d="M173.61,60.74 L173.61,61.15 L164.79,61.15 C161.173452,61.1081105 157.808584,59.291082 155.79,56.29 L142.36,35.66 L122.36,61.15 L117.75,61.15 L140.25,32.42 L123.33,6.6 C122.703528,5.65784732 121.910569,4.8377778 120.99,4.18 C120.013371,3.47266848 118.915161,2.95067988 117.75,2.64 L116.29,2.32 L116.29,1.90993035 L125.11,1.91 C128.720827,1.89704795 132.09879,3.69112183 134.11,6.69 L146.11,25.05 L164.24,1.91 L168.85,1.91 L148.2,28.32 L166.48,56.32 C167.119891,57.3060734 167.945163,58.1585154 168.91,58.83 C169.909048,59.5491342 171.035723,60.0717486 172.23,60.37 L173.61,60.74 Z"></path><path d="M46,61.15 L43.94,57.5 L16.05,57.5 L16.05,1.91 L0.83,1.91 L0.83,2.32 C5.77,3.69 7.96,6.69 7.96,10.16 L7.96,61.16 L46,61.15 Z"></path><path d="M213.18,1.91 L213.18,61.15 L205.09,61.15 L205.09,10.15 C205.09,6.68 202.9,3.68 197.89,2.31 L197.89,1.9 L213.18,1.91 Z"></path><path d="M294.1,45.77 C294.1,49.09 291.68,61.15 271.2,61.15 L249.52,61.15 L249.52,10.25 C249.50416,6.14950428 246.390487,2.72489638 242.31,2.32 L242.31,1.91 L271.2,1.91 C289.33,1.67 291.51,14.78 291.51,17.37 C291.51,25.54 286.09,29.26 281.24,30.96 C287.06,32.32 294.1,35.98 294.1,45.77 Z M258.42,29.18 L271.61,29.18 C274.603203,29.1702515 277.466083,27.9542274 279.551328,25.8068768 C281.636573,23.6595262 282.768076,20.7622007 282.69,17.77 C282.69,9.44 277.27,4.77 269.91,4.77 L258.42,4.77 L258.42,29.18 Z M284.31,45.37 C284.31,33.15 271.45,32.01 269.02,32.01 L258.42,32.01 L258.42,58.01 L271.2,58.01 C271.2,58.01 284.31,57.67 284.31,45.37 Z"></path><path d="M382,31.37 C382,52.81 369.21,62.2 353.43,62.2 C337.65,62.2 324.87,52.81 324.87,31.37 C324.87,10.65 337.65,0.62 353.43,0.62 C369.21,0.62 382,10.49 382,31.37 Z M372.29,31.37 C372.29,12.37 363.87,3.29 353.43,3.29 C342.99,3.29 334.58,12.51 334.58,31.37 C334.58,50.95 343.07,59.45 353.43,59.45 C363.79,59.45 372.28,50.95 372.28,31.37 L372.29,31.37 Z"></path><path d="M461.94,60.74 L461.94,61.15 L453.12,61.15 C449.500767,61.118512 446.13136,59.2990322 444.12,56.29 L430.7,35.66 L410.7,61.15 L406.1,61.15 L428.6,32.42 L411.69,6.6 C411.057133,5.65974152 410.261283,4.84018478 409.34,4.18 C408.364427,3.47088969 407.265874,2.94873795 406.1,2.64 L404.65,2.32 L404.65,1.90986061 L413.47,1.91 C417.08216,1.89164564 420.462519,3.68699216 422.47,6.69 L434.47,25.05 L452.59,1.91 L457.21,1.91 L436.53,28.32 L454.82,56.32 C455.459891,57.3060734 456.285163,58.1585154 457.25,58.83 C458.245423,59.5490486 459.368814,60.0717138 460.56,60.37 L461.94,60.74 Z"></path></g></svg>
+                    </a>
+                    <span class="footer-text">www.lixibox.com là kênh mua sắm mỹ phẩm, làm đẹp hàng đầu Việt Nam được các beauty blogger lựa chọn để giới thiệu sản phẩm họ yêu thích tới khách hàng, người hâm mộ.</span>
+                </div>
+                <div class="col-md-3">
+                    <span class="fs-5 mb-3 d-block footer-title">Danh mục Sản phẩm</span>
+                    <ul class="list-unstyled">
+                        <li class="pb-2"> <a href="">Beauty Box</a></li>
+                        <li class="pb-2"><a href="">Trang điểm</a></li>
+                        <li class="pb-2"><a href="">Tóc</a></li>
+                        <li class="pb-2"><a href="">Dưỡng da</a></li>
+                        <li class="pb-2"><a href="">Cơ thể</a></li>
+                        <li class="pb-2"><a href="">Cọ và phụ kiện</a></li>
+                        <li class="pb-2"><a href="">Shop Mẹ và Bé</a></li>
+                      </ul>
+                </div>
+                <div class="col-md-3">
+                    <span class="fs-5 mb-3 d-block footer-title">Thông tin & Hướng dẫn</span>
+                    <ul class="list-unstyled">
+                        <li class="pb-2"> <a href="">Về Lixibox</a></li>
+                        <li class="pb-2"><a href="">Câu hỏi thường gặp</a></li>
+                        <li class="pb-2"><a href="">Hỗ trợ Đơn hàng</a></li>
+                        <li class="pb-2"><a href="">Cửa hàng Lixibox</a></li>
+                        <li class="pb-2"><a href="">Hướng dẫn cài đặt</a></li>
+                        <li class="pb-2"><a href="">Phương thức vận chuyển</a></li>
+                        <li class="pb-2"><a href="">Chính sách đổi trả</a></li>
+                        <li class="pb-2"><a href="">Điểu khoản sử dụng</a></li>
+                      </ul>
+                </div>
+                <div class="col-md-3">
+                    <span class="fs-5 mb-3 d-block footer-title">Tải ứng dụng LIXIBOX</span>
+                    <div class="d-flex mb-3">
+                        <a href=""><img src="./assets/img/ios-app.png" alt="" class="w-100"></a>
+                        <a href=""><img src="./assets/img/android-app.png" alt="" class="w-100"></a>
+                    </div>
+                    <span class="text-white fs-6">Hotline: </span><span class="text-white fs-5">1800 2040</span>
+                    <div class="d-flex mt-2 connect justify-content-between">
+                        <a href=""><i class="bi bi-facebook fs-2"></i></a>
+                        <a href=""><i class="bi bi-instagram fs-2"></i></a>
+                        <a href=""><i class="bi bi-youtube fs-2"></i></a>
+                        <a href=""><i class="bi bi-messenger fs-2"></i></a>
+                        <a href=""><i class="bi bi-pinterest fs-2"></i></a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+       
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script>
+        function myFunction() {
+          var dots = document.getElementById("dots");
+          var moreText = document.getElementById("more");
+          var btnText = document.getElementById("myBtn");
+        
+          if (dots.style.display === "none") {
+            dots.style.display = "inline";
+            btnText.innerHTML = "Xem thêm"; 
+            moreText.style.display = "none";
+          } else {
+            dots.style.display = "none";
+            btnText.innerHTML = "Thu gọn"; 
+            moreText.style.display = "inline";
+          }
+        }
+        function changeImage(productImage) {
+            var mainProductImage = document.getElementById('main_product_image');
+            mainProductImage.src = productImage.src
+        }
+    </script>
+   
+</body>
+</html>
